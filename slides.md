@@ -158,8 +158,7 @@ app.???('/orders/search', (req, res) => {
 //  then either way it'll return { id: 1, item: 'Taco', quantity: 2, customer: 'Alice' }
 ```
 
-- Remember to save to GitHub
-- Goto next slide...
+Goto next slide...
 
 
 <!--
@@ -175,6 +174,8 @@ Discuss:
 - What is the difference between route parameters (/orders/:id) and query parameters (/orders/search?customer=Alice)?  When and why would you use one over the other?
 - How might you modify the /orders/search route to allow partial matches (e.g., search for “Ali” to get “Alice”)?
 - How might you handle pagination in the /orders/search route? ex: ?page=2&limit=10, and how would that change the response structure?
+
+Remember to save to GitHub
 
 ---
 layout: image-right
@@ -249,6 +250,8 @@ Discuss:
 - Where does the server get the new order data from in the request?
 - How could you validate the incoming request data to make sure it's complete and valid?
 What would happen if a user sends a request without item, quantity, or customer?
+
+Remember to save to GitHub
 
 ---
 transition: slide-left
