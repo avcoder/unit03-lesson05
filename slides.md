@@ -18,7 +18,7 @@ mdc: true
 
 # Node.js - part 5/12
 Back-End Development
-- [ ] Handle HTTP requests
+- [ ] Handle HTTP requests (GET, POST, PUT, DELETE)
 - [ ] Create routing in Express
 - [ ] Handle query strings and parameters 
 
@@ -288,6 +288,8 @@ Discuss:
 - Why did we use findIndex() instead of find() when updating?  (i.e. What do we need that find() doesn’t give us?)
 - How can you validate the data before updating? What if someone tries to update an order with quantity: "hello"?
 
+Remember to save to GitHub
+
 ---
 transition: slide-left
 ---
@@ -321,6 +323,8 @@ Discuss:
 - How does the server know which order to delete?
 - Should anyone be allowed to delete an order?
 - What are "soft deletes", why would you use it and how would you implement it?
+
+Remember to save to GitHub
 
 ---
 transition: slide-left
