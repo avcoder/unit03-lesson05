@@ -270,7 +270,7 @@ app.???('/orders/:id', (req, res) => {
   const index = orders.findIndex((o) => o.id === orderId);
 
   if (index !== -1) { // My font ligature makes the "not equals" operator look like that in the slides
-    orders[index] = { id: orderId, item, quantity, customer };
+    orders[index] = { id: orderId, item, quantity, customer }; // what does this line do?
     res.json(orders[index]);
   } else {
     res.status(404).json({ error: 'Order not found' });
