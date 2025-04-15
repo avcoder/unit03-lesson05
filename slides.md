@@ -308,7 +308,7 @@ app.???('/orders/:id', (req, res) => {
   const orderId = parseInt(req.params.id);
   const index = orders.findIndex((o) => o.id === orderId);
 
-  if (index !== -1) {
+  if (index !== -1) { // When will index every be -1 ?
     orders.splice(index, 1);
     res.sendStatus(204); // What does status 204 mean?
   } else {
