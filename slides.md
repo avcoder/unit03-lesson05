@@ -263,7 +263,8 @@ transition: slide-left
 - Request's body should contain the new data for the order (item, quantity, customer)
 
 ```js
-app.put('/orders/:id', (req, res) => {
+// 1. Fill in ??? with the appropriate HTTP method
+app.???('/orders/:id', (req, res) => {
   const orderId = parseInt(req.params.id);
   const { item, quantity, customer } = req.body;
   const index = orders.findIndex((o) => o.id === orderId);
@@ -302,7 +303,8 @@ transition: slide-left
 - Add a new route: Delete /orders/:id should delete an order by id 
 
 ```js
-app.delete('/orders/:id', (req, res) => {
+// 1. Fill in ??? with the appropriate HTTP method
+app.???('/orders/:id', (req, res) => {
   const orderId = parseInt(req.params.id);
   const index = orders.findIndex((o) => o.id === orderId);
 
